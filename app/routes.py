@@ -27,7 +27,6 @@ def insert():
         return redirect(url_for('Index'))
 
 
-'''ang purpose sa id sa update is to get the information ana na row with that id and save that updated information still on that same id every time e visit na nimo na url'''
 @app.route('/update/<id>', methods = ['POST'])
 def update(id):
     if request.method == 'POST':
